@@ -16,15 +16,9 @@ export class Server {
 
     // Mandar email
     const emailService = new EmailService();
-    emailService.sendEmail({
-      to: 'jorgechavezrnd@gmail.com',
-      subject: 'Logs del sistema',
-      htmlBody: `
-        <h3> Logs del sistema - NOC</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor accumsan, condimentum nisl ac, scelerisque ex. Aenean fermentum purus est, ut iaculis lorem sagittis porttitor. Vestibulum facilisis augue eu quam fringilla accumsan. Aliquam condimentum eu risus id porta. Vivamus bibendum justo lacinia rhoncus suscipit. Aenean dignissim nibh sit amet consectetur aliquet. Curabitur sed efficitur dolor, tristique sodales leo.</p>
-        <p>Ver logs adjuntos</p>
-      `
-    });
+    emailService.sendEmailWithFileSystemLogs(
+      ['jorgechavezrnd@gmail.com', 'jorge.chavez.r@ucb.edu.bo']
+    );
 
     // CronService.createJob(
     //   '*/5 * * * * *',
