@@ -5,5 +5,8 @@ dist/
 logs/
 
 .env
+.env.test
 
 /src/generated/prisma
+
+/coverage

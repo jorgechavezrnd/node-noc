@@ -16,5 +16,12 @@ El objetivo es crear una serie de tareas usando Arquitectura Limpia con TypeScri
    ```
 6. Ejecutar ```npm run dev```
 
+# tests
+1. Clonar el archivo .env.template a .env.test
+2. Levantar los contenedores de tests y ejecutar los tests
+   ```
+   npm run test:watch
+   ```
+
 ## Obtener Gmail Key
 [Google AppPasswords](https://myaccount.google.com/u/0/apppasswords)
